@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PetsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/AppBarPets"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:menu="@menu/menu_pets"
+            app:navigationIcon="@drawable/baseline_back"
+            app:title="KimPet"
+            />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/AppBarPets"
+        android:layout_height="wrap_content"
+        app:tabMode="scrollable"
+        android:id="@+id/idTabLayoutPets">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:id="@+id/idTbItemGatos"
+            android:icon="@drawable/cat"
+            android:layout_height="wrap_content"
+            android:text="Gatos"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:id="@+id/idTbItemCachorros"
+            android:icon="@drawable/dog"
+            android:layout_height="wrap_content"
+            android:text="Cachorros" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:id="@+id/idTbItemPeixes"
+            android:icon="@drawable/fish"
+            android:layout_height="wrap_content"
+            android:text="Peixes" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:id="@+id/idTbItemHamster"
+            android:icon="@drawable/fish"
+            android:layout_height="wrap_content"
+            android:text="Hamster" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/idTbItemPassaro"
+            android:icon=""
+            android:text="Pássaros"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:icon=""
+            android:layout_height="wrap_content"
+            android:id="@+id/idTbItemMacaco"
+            android:text="Macaco"/>
+
+
+
+    </com.google.android.material.tabs.TabLayout>
+
+
+</RelativeLayout>
